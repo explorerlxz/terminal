@@ -1,6 +1,7 @@
-## <center> Cut 命令 </center>
+##  Cut 命令 
 
->以/etc/passwd的前五行内容为例：
+```
+以/etc/passwd的前五行内容为例：
 [rocrocket@rocrocket programming]$ cat /etc/passwd|head -n 5
 root:x:0:0:root:/root:/bin/bash
 bin:x:1:1:bin:/bin:/sbin/nologin
@@ -14,7 +15,7 @@ daemon
 adm
 lp
 看到了吧，用-d来设置间隔符为冒号，然后用-f来设置我要取的是第一个域，再按回车，所有的用户名就都列出来了
-
+```
 
 
 ```
