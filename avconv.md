@@ -18,6 +18,11 @@ avconv -f pulse -ac 1 -i alsa_output.pci-0000_00_1b.0.analog-stereo.monitor -f x
 
 > * **record audio & video!** This command doesn't work very well, the sound and video are not synchronize!
 
+```
+avconv -i *.mp4 output.mp3
+```
+> convert mp4 file to mp3 file
+
 ************
 
 ## Related commands
