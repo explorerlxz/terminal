@@ -32,3 +32,7 @@ ffmpeg, pactl
 ```pactl
 pactl list sources | grep analog-stereo.monitor
 ```
+
+## Reference
+
+- [ffmpeg/avconv 轉檔與影片連接範例](http://rocksaying.tw/archives/22568176.html)
