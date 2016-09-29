@@ -1,10 +1,15 @@
 # avconv
 
+### 录制视频
+
 ```
 avconv -f x11grab -r 25 -s 1280x720 -i :0.0+0,0 -vcodec libx264 -pre lossless_ultrafast -threads 0 video.mkv
 ```
 
 > * **record video**! The command is learned from http://wiki.oz9aec.net/index.php/High_quality_screen_capture_with_avconv
+
+### 录制音频
+
 
 ```
 avconv -f pulse -i alsa_output.pci-0000_00_1b.0.analog-stereo.monitor audio.wav
@@ -18,7 +23,7 @@ avconv -f pulse -ac 1 -i alsa_output.pci-0000_00_1b.0.analog-stereo.monitor -f x
 
 ### 截取一段视频
 
-我只想把视频的前后减去一段，视频不进行转吗。说白了就是跟摘豆角一样--掐头去尾。
+只把视频的前后减去一段，视频不进行转码。说白了就是跟摘豆角一样--掐头去尾。
 
 ffmpeg复杂的参数里面有 -ss 和 -t 实现这个功能：
 
@@ -51,9 +56,11 @@ mencoder -ovc copy -audiofile background.mp3 -oac copy video.avi -o output.avi
 
 > * **record audio & video!** This command doesn't work very well, the sound and video are not synchronize!
 
+
 ```
 avconv -i *.mp4 output.mp3
 ```
+
 > convert mp4 file to mp3 file
 
 ************
